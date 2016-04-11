@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_item_pressed_style"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp" >
+
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/health_item_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/health_item_info"
+            android:layout_width="match_parent"
+            android:layout_height="120.0dip"
+            android:layout_toRightOf="@+id/health_item_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:textSize="25sp" />
+    </RelativeLayout> 
+
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" /> 
+    
+
+</LinearLayout>

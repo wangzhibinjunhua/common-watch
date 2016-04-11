@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">com.wzb.watch</string>
+    <string name="profile_name">设备管理</string>
+    <string name="location">位置</string>
+    <string name="call">打电话</string>
+    <string name="record">语音</string>
+    <string name="historical_location">历史位置</string>
+    <string name="bluetooth">蓝牙随行</string>
+    <string name="more">更多...</string>
+    <string name="settings">设置</string>
+    <string name="exit_dialog">再按一次退出应用</string>
+     <string name="healthmanager">健康管理</string>
+          <string name="delete_device">删除</string>
+    <string name="add_device">增加</string>
+    <string name="device_info">设备信息</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="home_page">首页</string>
+</resources>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head" />
+     <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidumapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+     <Button
+         android:id="@+id/start_location"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="定位"/>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+"
+
+</LinearLayout>

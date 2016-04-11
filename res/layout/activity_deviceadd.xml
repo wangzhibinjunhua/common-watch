@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+         <include
+        android:id="@+id/tape_title"
+        layout="@layout/title_layout" />
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+		<TextView
+		    android:id="@+id/name_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="姓       名:"
+		    android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/name_tv"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+       <TextView
+		    android:id="@+id/phonenumber_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="手机号码:"
+		    android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/phonenumber_et"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/phonenumber_tv"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+       <TextView
+		    android:id="@+id/imei_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="设备    ID:"
+		    android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/imei_et"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imei_tv"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DADBDA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0BA683"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/device_cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@color/blue"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADBDA" />
+
+        <Button
+            android:id="@+id/device_ok"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:background="@color/blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+
+</LinearLayout>

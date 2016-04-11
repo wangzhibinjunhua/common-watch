@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tape_title"
+        layout="@layout/title_layout" />
+    
+    <GridView
+        android:id="@+id/gridViewHomePage"
+		android:numColumns="auto_fit"
+		android:gravity="center"
+		android:columnWidth="100dp"
+		android:stretchMode="columnWidth"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>"
+		
+</LinearLayout>

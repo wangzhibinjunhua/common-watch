@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/biz_news_local_weather_bg_big"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp" >
+
+        <!--
+             <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp" 
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wwj_748"
+            app:border_color="#FFffffff"
+            app:border_width="1dp" />
+        -->
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/device_manager"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/profile_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10.0dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/healthmanager_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/healthmanager_icon" />
+
+        <TextView
+            android:id="@+id/healthManagerView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/healthmanager_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/healthmanager"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/call_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/call_icon" />
+
+        <TextView
+            android:id="@+id/callView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/call_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/call"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/record_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/record_icon" />
+
+        <TextView
+            android:id="@+id/recordView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/record_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/historical_location_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/historical_location_icon" />
+
+        <TextView
+            android:id="@+id/historicalLocationView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/historical_location_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/historical_location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ble_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ble_icon" />
+
+        <TextView
+            android:id="@+id/bleView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/ble_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/bluetooth"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/settings_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/settings_icon" />
+
+        <TextView
+            android:id="@+id/settingsView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/settings_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <com.example.watch.util.CircleImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/more_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/more_icon" />
+
+        <TextView
+            android:id="@+id/moreView"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/more_image"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/more"
+            android:textColor="@color/white"
+            android:textSize="@dimen/left_menu_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+</LinearLayout>
